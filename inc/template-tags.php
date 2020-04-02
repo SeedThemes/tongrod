@@ -277,9 +277,13 @@ if ( ! function_exists( 'tongrod_need_img' ) ) :
 	/**
 	 * Displays Photo from Main Need
 	 */
-	function tongrod_need_img() {
-		if(get_field('stuff')) {
+	function tongrod_need_img($id = NULL) {
+		if ($id) {
+			$stuff = get_field('stuff', $id);
+		} else {
 			$stuff = get_field('stuff');
+		}
+		if($stuff) {
 			$value = esc_attr($stuff['value']);
 			$label = esc_html($stuff['label']);
 			echo '<img src="https://tongrod.com/img/' . $value . '.jpg" alt="' . $label . '">';

@@ -507,3 +507,21 @@ table {
     text-align: center;
   }
 }
+
+.support-summary {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: 2fr 3fr;
+  img {
+    border-radius: 5px;
+  }
+}
+.table-support-side {
+  th {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
