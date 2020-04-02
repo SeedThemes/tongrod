@@ -125,6 +125,9 @@ require get_template_directory() . '/inc/template-tags.php';
 /* Customizer additions */
 require get_template_directory() . '/inc/customizer.php';
 
+/* Create Custom Post Type */
+require get_template_directory() . '/inc/cpt.php';
+
 /* Load Jetpack */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
@@ -138,11 +141,6 @@ function moss_register_required_plugins() {
 		array(
 			'name'      => 'Kirki Customizer Framework',
 			'slug'      => 'kirki',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'Advanced Custom Fields',
-			'slug'      => 'advanced-custom-fields',
 			'required'  => false,
 		),
 	);
