@@ -270,3 +270,21 @@ if ( ! function_exists( 'moss_site_header' ) ) :
 		}
 	}
 endif;
+
+
+
+if ( ! function_exists( 'tongrod_need_img' ) ) :
+	/**
+	 * Displays Photo from Main Need
+	 */
+	function tongrod_need_img() {
+		if(get_field('stuff')) {
+			$stuff = get_field('stuff');
+			$value = esc_attr($stuff['value']);
+			$label = esc_html($stuff['label']);
+			echo '<img src="https://tongrod.com/img/' . $value . '.jpg" alt="' . $label . '">';
+		} else {
+			the_post_thumbnail();
+		}
+	}
+endif;

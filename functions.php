@@ -5,7 +5,7 @@ if( class_exists('Kirki') ) { include_once( dirname( __FILE__ ) . '/inc/kirki.ph
 /* SEEDTHEMES SETTINGS */
 if (!isset($GLOBALS['s_wp_comments']))  {$GLOBALS['s_wp_comments']	= 'disable';}       // disable, enable
 if (!isset($GLOBALS['s_style_css']))    {$GLOBALS['s_style_css']    = 'disable';}       // disable, enable
-if (!isset($GLOBALS['s_blog_profile'])) {$GLOBALS['s_blog_profile'] = 'enable';}        // disable, enable
+if (!isset($GLOBALS['s_blog_profile'])) {$GLOBALS['s_blog_profile'] = 'disable';}        // disable, enable
 
 
 /* WORDPRESS SETTINGS */
