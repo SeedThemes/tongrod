@@ -1,6 +1,6 @@
 {
     "key": "group_5e78758a3bdf3",
-    "title": "Page Display Options",
+    "title": "การแสดงผลของหน้า",
     "fields": [
         {
             "key": "field_5e7875c593607",
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584963002
+    "modified": 1585804719
 }

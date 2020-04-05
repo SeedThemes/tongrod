@@ -1,0 +1,143 @@
+{
+    "key": "group_5e844f47c44bb",
+    "title": "ความต้องการ",
+    "fields": [
+        {
+            "key": "field_5e84526d00c57",
+            "label": "สถานะ",
+            "name": "status",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e844f4ef11ce",
+            "label": "หน่วยงาน",
+            "name": "unit",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "unit"
+            ],
+            "taxonomy": "",
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5e8450d7c3d46",
+            "label": "รูปสิ่งที่ต้องการ",
+            "name": "stuff",
+            "type": "select",
+            "instructions": "หากเลือกจะแสดงรูปอัตโนมัติ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "legs-cover": "ถุงหุ้มเท้า",
+                "waterproof-gown": "กาวน์กันน้ำ",
+                "coverall": "ชุดหมีแพทย์",
+                "nitrile-gloves": "ถุงมือไนไตร์",
+                "n95-mask": "หน้ากาก N95",
+                "surgical-mask": "หน้ากากอนามัย",
+                "face-shield": "หน้ากากคลุมหน้า",
+                "alcohol-gel": "แอลกอฮอล์แบบเจล",
+                "alcohol-water": "แอลกอฮอล์น้ำ 70%",
+                "terumo-c205": "ปรอทวัดไข้ C205",
+                "medical-head-cap": "หมวกคลุมผม",
+                "plastic-apron": "เอี๊ยมพลาสติกใส",
+                "boots": "รองเท้าบูท"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "array",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e84518fb08fa",
+            "label": "ปริมาณการใช้ต่อเดือน",
+            "name": "usage",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5e8451f1b08fb",
+            "label": "ยอดในสต็อก",
+            "name": "stock",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "need"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1585874350
+}
